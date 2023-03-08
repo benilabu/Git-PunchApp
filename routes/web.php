@@ -18,7 +18,6 @@ Route::get('qrLogin', ['uses' => 'QrLoginController@index']);
 Route::get('qrLogin-option1', ['uses' => 'QrLoginController@indexoption2']);
 Route::post('qrLogin', ['uses' => 'QrLoginController@checkUser']);
 Route::post('qrLoginByrfid', ['uses' => 'QrLoginController@checkUserByrfid']);
-//Route::post('qrLoginByrfid', [QrLoginController::class, 'checkUserByrfid'])->name('loginbyrfid');
 //Route::get('qrpunch', ['uses' => 'PunchController@index']);
 //Route::resource('qrpunch', PunchController::class);
 
