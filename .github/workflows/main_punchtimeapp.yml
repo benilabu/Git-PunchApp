@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'PunchTimeApp'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A0EDA175DABC437198A553C35730316A }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2C252C2D75134EE68D6AEF1052BA45B0 }}
           package: .
