@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '230583f2cff8208461ad52177392821f6e669e3e',
+    'reference' => '5c26f6b191b2c0a5488f0f8120cbbd05c2f45947',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -88,14 +88,14 @@
       ),
       'reference' => 'cb17b6477dfff935958ba01325f2e8a2bfa6dab3',
     ),
-    'fzaninotto/faker' => 
+    'fakerphp/faker' => 
     array (
-      'pretty_version' => 'v1.9.2',
-      'version' => '1.9.2.0',
+      'pretty_version' => 'v1.21.0',
+      'version' => '1.21.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '848d8125239d7dbf8ab25cb7f054f1a630e68c2e',
+      'reference' => '92efad6a967f0b79c499705c69b662f738cc9e4d',
     ),
     'hamcrest/hamcrest-php' => 
     array (
@@ -359,7 +359,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '230583f2cff8208461ad52177392821f6e669e3e',
+      'reference' => '5c26f6b191b2c0a5488f0f8120cbbd05c2f45947',
     ),
     'laravel/tinker' => 
     array (
@@ -559,6 +559,15 @@
       ),
       'reference' => 'a23b761686d50a560cc56233b9ecf49597cc9118',
     ),
+    'psr/container' => 
+    array (
+      'pretty_version' => '2.0.2',
+      'version' => '2.0.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'c71ecc56dfe541dbd90c5360474fbc405f8d5963',
+    ),
     'psr/event-dispatcher-implementation' => 
     array (
       'provided' => 
@@ -752,6 +761,15 @@
       array (
       ),
       'reference' => 'ab42889de57fdfcfcc0759ab102e2fd4ea72dcae',
+    ),
+    'symfony/deprecation-contracts' => 
+    array (
+      'pretty_version' => 'v2.5.2',
+      'version' => '2.5.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'e8b495ea28c1d97b5e0c121748d6f9b53d075c66',
     ),
     'symfony/event-dispatcher' => 
     array (
