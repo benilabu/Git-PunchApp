@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '5c26f6b191b2c0a5488f0f8120cbbd05c2f45947',
+    'reference' => '51bd5f7141545a23c2b2ee3fc09269fde0724316',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -383,7 +383,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '5c26f6b191b2c0a5488f0f8120cbbd05c2f45947',
+      'reference' => '51bd5f7141545a23c2b2ee3fc09269fde0724316',
     ),
     'laravel/tinker' => 
     array (
@@ -484,6 +484,24 @@ private static $installed = array (
       ),
       'reference' => '96c132c7f2f7bc3230723b66e89f8f150b29d5ae',
     ),
+    'phar-io/manifest' => 
+    array (
+      'pretty_version' => '1.0.1',
+      'version' => '1.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2df402786ab5368a0169091f61a7c1e0eb6852d0',
+    ),
+    'phar-io/version' => 
+    array (
+      'pretty_version' => '1.0.1',
+      'version' => '1.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'a70c0ced4be299a63d32fa96d9281d03e94041df',
+    ),
     'phpdocumentor/reflection-common' => 
     array (
       'pretty_version' => '2.2.0',
@@ -522,12 +540,12 @@ private static $installed = array (
     ),
     'phpunit/php-code-coverage' => 
     array (
-      'pretty_version' => '4.0.8',
-      'version' => '4.0.8.0',
+      'pretty_version' => '6.0.5',
+      'version' => '6.0.5.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'ef7b2f56815df854e66ceaee8ebe9393ae36a40d',
+      'reference' => '4cab20a326d14de7575a8e235c70d879b569a57a',
     ),
     'phpunit/php-file-iterator' => 
     array (
@@ -549,39 +567,39 @@ private static $installed = array (
     ),
     'phpunit/php-timer' => 
     array (
-      'pretty_version' => '1.0.9',
-      'version' => '1.0.9.0',
+      'pretty_version' => '2.1.3',
+      'version' => '2.1.3.0',
       'aliases' => 
       array (
       ),
-      'reference' => '3dcf38ca72b158baf0bc245e9184d3fdffa9c46f',
+      'reference' => '2454ae1765516d20c4ffe103d85a58a9a3bd5662',
     ),
     'phpunit/php-token-stream' => 
     array (
-      'pretty_version' => '2.0.2',
-      'version' => '2.0.2.0',
+      'pretty_version' => '3.1.3',
+      'version' => '3.1.3.0',
       'aliases' => 
       array (
       ),
-      'reference' => '791198a2c6254db10131eecfe8c06670700904db',
+      'reference' => '9c1da83261628cb24b6a6df371b6e312b3954768',
     ),
     'phpunit/phpunit' => 
     array (
-      'pretty_version' => '5.7.27',
-      'version' => '5.7.27.0',
+      'pretty_version' => '7.0.0',
+      'version' => '7.0.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'b7803aeca3ccb99ad0a506fa80b64cd6a56bbc0c',
+      'reference' => '9b3373439fdf2f3e9d1578f5e408a3a0d161c3bc',
     ),
     'phpunit/phpunit-mock-objects' => 
     array (
-      'pretty_version' => '3.4.4',
-      'version' => '3.4.4.0',
+      'pretty_version' => '6.1.2',
+      'version' => '6.1.2.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'a23b761686d50a560cc56233b9ecf49597cc9118',
+      'reference' => 'f9756fd4f43f014cb2dca98deeaaa8ce5500a36e',
     ),
     'psr/container' => 
     array (
@@ -662,66 +680,75 @@ private static $installed = array (
     ),
     'sebastian/comparator' => 
     array (
-      'pretty_version' => '1.2.4',
-      'version' => '1.2.4.0',
+      'pretty_version' => '2.1.3',
+      'version' => '2.1.3.0',
       'aliases' => 
       array (
       ),
-      'reference' => '2b7424b55f5047b47ac6e5ccb20b2aea4011d9be',
+      'reference' => '34369daee48eafb2651bea869b4b15d75ccc35f9',
     ),
     'sebastian/diff' => 
     array (
-      'pretty_version' => '1.4.3',
-      'version' => '1.4.3.0',
+      'pretty_version' => '3.0.3',
+      'version' => '3.0.3.0',
       'aliases' => 
       array (
       ),
-      'reference' => '7f066a26a962dbe58ddea9f72a4e82874a3975a4',
+      'reference' => '14f72dd46eaf2f2293cbe79c93cc0bc43161a211',
     ),
     'sebastian/environment' => 
     array (
-      'pretty_version' => '2.0.0',
-      'version' => '2.0.0.0',
+      'pretty_version' => '3.1.0',
+      'version' => '3.1.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '5795ffe5dc5b02460c3e34222fee8cbe245d8fac',
+      'reference' => 'cd0871b3975fb7fc44d11314fd1ee20925fce4f5',
     ),
     'sebastian/exporter' => 
     array (
-      'pretty_version' => '2.0.0',
-      'version' => '2.0.0.0',
+      'pretty_version' => '3.1.5',
+      'version' => '3.1.5.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'ce474bdd1a34744d7ac5d6aad3a46d48d9bac4c4',
+      'reference' => '73a9676f2833b9a7c36968f9d882589cd75511e6',
     ),
     'sebastian/global-state' => 
     array (
-      'pretty_version' => '1.1.1',
-      'version' => '1.1.1.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => 'bc37d50fea7d017d3d340f230811c9f1d7280af4',
-    ),
-    'sebastian/object-enumerator' => 
-    array (
-      'pretty_version' => '2.0.1',
-      'version' => '2.0.1.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '1311872ac850040a79c3c058bea3e22d0f09cbb7',
-    ),
-    'sebastian/recursion-context' => 
-    array (
       'pretty_version' => '2.0.0',
       'version' => '2.0.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '2c3ba150cbec723aa057506e73a8d33bdb286c9a',
+      'reference' => 'e8ba02eed7bbbb9e59e43dedd3dddeff4a56b0c4',
+    ),
+    'sebastian/object-enumerator' => 
+    array (
+      'pretty_version' => '3.0.4',
+      'version' => '3.0.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'e67f6d32ebd0c749cf9d1dbd9f226c727043cdf2',
+    ),
+    'sebastian/object-reflector' => 
+    array (
+      'pretty_version' => '1.1.2',
+      'version' => '1.1.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '9b8772b9cbd456ab45d4a598d2dd1a1bced6363d',
+    ),
+    'sebastian/recursion-context' => 
+    array (
+      'pretty_version' => '3.0.1',
+      'version' => '3.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '367dcba38d6e1977be014dc4b22f47a484dac7fb',
     ),
     'sebastian/resource-operations' => 
     array (
@@ -944,14 +971,14 @@ private static $installed = array (
       ),
       'reference' => '0719f6cf4633a38b2c1585140998579ce23b4b7d',
     ),
-    'symfony/yaml' => 
+    'theseer/tokenizer' => 
     array (
-      'pretty_version' => 'v4.4.45',
-      'version' => '4.4.45.0',
+      'pretty_version' => '1.2.1',
+      'version' => '1.2.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'aeccc4dc52a9e634f1d1eebeb21eacfdcff1053d',
+      'reference' => '34a41e998c2183e22995f158c581e7b5e755ab9e',
     ),
     'tightenco/collect' => 
     array (
@@ -1210,7 +1237,6 @@ self::$canGetVendors = method_exists('Composer\Autoload\ClassLoader', 'getRegist
 $installed = array();
 
 if (self::$canGetVendors) {
-
 foreach (ClassLoader::getRegisteredLoaders() as $vendorDir => $loader) {
 if (isset(self::$installedByVendor[$vendorDir])) {
 $installed[] = self::$installedByVendor[$vendorDir];
