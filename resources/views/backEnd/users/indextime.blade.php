@@ -6,7 +6,6 @@ Users
 @section('content')
 <div class="panel panel-default">
         <div class="panel-heading">Users</div>
-        <span class="badge bg-green">1</span>
 
         <div class="panel-body">
 
@@ -16,7 +15,7 @@ Users
 
             <th>Select All <input name="select_all" value="1" id="example-select-all" type="checkbox" /></th>
             <th>ID</th>
-            <th>user id</th>
+            <th>first name</th>
             <th>Last name</th>
             <th>Date </th>
             <th>Heure d'arriver</th>
@@ -27,10 +26,11 @@ Users
     <tbody>
         @foreach($timesave as $user)
             <tr>
+           
                 <td>{{ Form::checkbox('sel', $user->id, null, ['class' => ''])}}</td>
                 <td>{{$user->id}}</td>
-                <td><a href="{{route('user.show', $user->id)}}">{{$user->user_id}}</a></td>
-                <td><a href="{{route('user.show', $user->id)}}">salut</a></td>
+                <td><a href="{{route('user.show', $user->id)}}">{{$user->user->first_name}}</a></td>
+                <td><a href="{{route('user.show', $user->id)}}">{{$user->user->last_name}}</a></td>
                 <td>{{$user->date_today}}</td>
                 <td> <a href="">{{$user->heure_arriver}}</a>  </td>
                 <td>{{$user->heure_sortie}}</td>

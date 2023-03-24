@@ -12,12 +12,15 @@ use App\Http\Controllers\PunchController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::auth();
 Route::get('/', ['uses' => 'HomeController@home']);
 Route::get('qrLogin', ['uses' => 'QrLoginController@index']);
 Route::get('qrLogin-option1', ['uses' => 'QrLoginController@indexoption2']);
 Route::post('qrLogin', ['uses' => 'QrLoginController@checkUser']);
 Route::post('qrLoginByrfid', ['uses' => 'QrLoginController@checkUserByrfid']);
+Route::post('qrLoginBykeypad', ['uses' =>'QrLoginController@checkUserBykeypad']);
+//Route::post('qrLoginByrfid', [QrLoginController::class, 'checkUserByrfid'])->name('loginbyrfid');
 //Route::get('qrpunch', ['uses' => 'PunchController@index']);
 //Route::resource('qrpunch', PunchController::class);
 

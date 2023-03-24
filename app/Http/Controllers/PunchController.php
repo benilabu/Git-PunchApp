@@ -13,6 +13,8 @@ class PunchController extends Controller
         $datetoday = date("Y-m-d");
         $users = User::all();
         $timesave = Timeuser::all();
+        $teame=Timeuser::find(32)->user;
+    
         return view('backEnd.users.indextime', compact('users', 'timesave'));
     }
     public function indexedit()

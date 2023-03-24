@@ -24,21 +24,37 @@ class QrLoginController extends Controller
 	{
 		return view('backEnd.users.viewqrcode');
 	}
+
+	public function checkUserBykeypad(Request $request)
+	{
+		if($request->keypad_pass)
+		{
+			$user = User::where('passwordkeypad',$request->keypad_pass)->first();
+			$id_user = $user->id;
+			if ($user) {
+				$this->UpdateUserStatus($id_user);
+				Sentinel::authenticate($user);
+			   
+				$result =1;
+			 }else{
+				 $result =0;
+			 }
+		}
+		return view('auth.QrLogin');
+
+	}
 	
 	public function checkUserByrfid(Request $request) {
 		$result = 0;
-		$time_to_day=date("h:i:sa");
-		$post = new Newtimemodel;
-
 		   if ($request->Qrcode_pass) {
 		   
 			   $user = User::where('QRpassword',$request->Qrcode_pass)->first();
+			   $id_user = $user->id;
 		   
 			   if ($user) {
+				   $this->UpdateUserStatus($id_user);
 				   Sentinel::authenticate($user);
-				   $post->time_scan =$time_to_day;
-				   $post->name = $user->first_name;
-				   $post->save();
+				  
 				   $result =1;
 				}else{
 					$result =0;
@@ -55,8 +71,6 @@ class QrLoginController extends Controller
 			
 				$user = User::where('QRpassword',$request->data)->first();
 				$id_user = $user->id;
-			
-				
 				if ($user) {
 					$this->UpdateUserStatus($id_user);
 					Sentinel::authenticate($user);
@@ -65,17 +79,15 @@ class QrLoginController extends Controller
 				 	$result =0;
 				 }
 			}
-			return $result;
-		
-			
+			return $result;		
 	}
 
 	public function UpdateUserStatus($param)
 	{
 		$hourtoday=date("G:i:s");
-		$datetoday =date("y-m-j");  
-		$timeinit = date("00:00:00");  
+		$datetoday=date("Y-m-j");   
 		$updateuser = User::find($param);
+		$datenewformat = date("Y-m-j",strtotime($updateuser->last_login));
 
 		if($updateuser->presence_status =="0")
 		{
@@ -89,8 +101,12 @@ class QrLoginController extends Controller
 		}
 		else
 		{	
-			$this->updatehoursortie($param);
-			$updateuser->presence_status = "0";
+			if($datenewformat == $datetoday)
+			{
+				$this->updatehoursortie($param);
+			}
+				$updateuser->presence_status = "0";
+		
 		}
 		$updateuser->save();
 	}
@@ -98,7 +114,7 @@ class QrLoginController extends Controller
 	public function updatehoursortie($paramid)
 	{
 		$hourtoday=date("G:i:s");
-		$datetoday =date("y-m-j");  
+		$datetoday =date("Y-m-j");  
 		$timeinit = date("00:00:00"); 
 		$timelook = Timeuser::where([ ['date_today','=',$datetoday],['user_id','=',$paramid],['heure_sortie','=',$timeinit] ])->get();
 		
@@ -109,6 +125,8 @@ class QrLoginController extends Controller
 		$updatetime =Timeuser::find($id_find);
 		$updatetime->heure_sortie = $hourtoday;
 		$updatetime->save();
+
+		
 
 	}
 	public function QrAutoGenerate(Request $request)

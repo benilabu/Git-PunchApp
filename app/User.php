@@ -19,6 +19,7 @@
  */
 namespace App;
 
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Cartalyst\Sentinel\Permissions\PermissibleInterface;
 use Cartalyst\Sentinel\Permissions\PermissibleTrait;
 use Cartalyst\Sentinel\Persistences\PersistableInterface;
@@ -36,6 +37,7 @@ class User extends Model implements RoleableInterface, PermissibleInterface, Per
 {
     use PermissibleTrait,Notifiable,AuthenticableTrait;
      use SoftDeletes;
+     
     /**
      * {@inheritDoc}
      */
@@ -59,6 +61,12 @@ class User extends Model implements RoleableInterface, PermissibleInterface, Per
     protected $hidden = [
         'password','remember_token','QRpassword',
     ];
+
+    public function timeuser(): HasOne
+    {
+        return $this->hasOne(Timeuser::class);
+    }
+ 
 
     //Change Password
     public function getRememberToken()
